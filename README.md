@@ -2,7 +2,7 @@
 Pipo Challenge - Backend :fire:
 </h1>
 
-<img src="https://imgur.com/5iB8FDY">
+<img width="50" src="https://github.com/gabrielloppes/icons/blob/main/5iB8FDY%20-%20Imgur.png">
 
 <p align="center">
 🔥 The main objective of this project is to create a solution that facilitates the current process of including new employees, where: We only ask for the necessary data for inclusion in those benefits; We validate the data provided according to the customer's benefits offer (avoiding possible future problems at the health insurance companies)
