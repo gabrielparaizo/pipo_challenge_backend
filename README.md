@@ -5,7 +5,7 @@ Pipo Challenge - Backend :fire:
   
 <div align="center">
   
-  ![GitHub](https://img.shields.io/github/license/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
+  ![GitHub package.json version](https://img.shields.io/github/package-json/v/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
   
 </div>
 
