@@ -5,12 +5,7 @@ Pipo Challenge - Backend :fire:
 This project was built using this technologies<br><br>
   
 <div align="center">
-  <div style="display: flex; place-items: center;">
-    <img width="70" src="https://github.com/gabrielloppes/icons/blob/main/5iB8FDY%20-%20Imgur.png">
-    <img width="100" src="https://github.com/gabrielloppes/icons/blob/main/AQOATQ3%20-%20Imgur.png">
-    <img width="40" src="https://github.com/gabrielloppes/icons/blob/main/KQ8ne7T%20-%20Imgur.png">
-    <img width="70" src="https://github.com/gabrielloppes/icons/blob/main/F6F64rl%20-%20Imgur.png">
-  </div>
+  ![GitHub](https://img.shields.io/github/license/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
 </div>
 
 </h3>
