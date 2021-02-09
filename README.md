@@ -2,9 +2,17 @@
 Pipo Challenge - Backend :fire:
 </h1>
 <h3 align="center">
-This project was built using this technologies
+This project was built using this technologies<br><br>
   
-  ![dd](https://github.com/gabrielloppes/icons/blob/main/6iedw39%20-%20Imgur.png)
+<div align="center">
+  <div style="display: flex; place-items: center;">
+    <img width="70" src="https://github.com/gabrielloppes/icons/blob/main/5iB8FDY%20-%20Imgur.png">
+    <img width="100" src="https://github.com/gabrielloppes/icons/blob/main/AQOATQ3%20-%20Imgur.png">
+    <img width="40" src="https://github.com/gabrielloppes/icons/blob/main/KQ8ne7T%20-%20Imgur.png">
+    <img width="70" src="https://github.com/gabrielloppes/icons/blob/main/F6F64rl%20-%20Imgur.png">
+  </div>
+</div>
+
 </h3>
 
 <p align="center">
