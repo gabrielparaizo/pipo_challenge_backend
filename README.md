@@ -8,6 +8,8 @@ Pipo Challenge - Backend :fire:
   ![GitHub last commit](https://img.shields.io/github/last-commit/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
   ![GitHub package.json version](https://img.shields.io/github/package-json/v/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
   ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
+  ![GitHub top language](https://img.shields.io/github/languages/top/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
   
 </div>
 
