@@ -2,10 +2,11 @@
 Pipo Challenge - Backend :fire:
 </h1>
 <h3 align="center">
-This project was built using this technologies<br><br>
   
 <div align="center">
+  
   ![GitHub](https://img.shields.io/github/license/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
+  
 </div>
 
 </h3>
