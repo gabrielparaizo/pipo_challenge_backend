@@ -29,7 +29,7 @@ To run this project locally you'll need:<br>
 
 Optionally, you can use [Insomnia](https://insomnia.rest/) to test API requests and [MongoDB Compass](https://www.mongodb.com/products/compass) to easily manipulate the database
 
-## Usage
+## ⚙️ Usage
 
 You must clone this repository to your local machine:<br>
 
@@ -44,7 +44,7 @@ You must clone this repository to your local machine:<br>
 
 After that, navigate to the project's folder and run `npm install` to install dependencies
 
-## Strategy and technical desicions
+## 💡 Strategy and technical desicions
 
 - ### Strategy Design Pattern<br>
 
