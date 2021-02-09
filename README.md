@@ -1,9 +1,11 @@
 <h1 align="center">
-Pipo Challenge - Node API :fire:
+Pipo Challenge - Backend :fire:
 </h1>
 
+![express](https://svgshare.com/s/TrG)
+
 <p align="center">
-🔥 This project was created using NodeJS, Express and MongoDB. The main objective of this project is to create a solution that facilitates the current process of including new employees, where: We only ask for the necessary data for inclusion in those benefits; We validate the data provided according to the customer's benefits offer (avoiding possible future problems at the health insurance companies)
+🔥 The main objective of this project is to create a solution that facilitates the current process of including new employees, where: We only ask for the necessary data for inclusion in those benefits; We validate the data provided according to the customer's benefits offer (avoiding possible future problems at the health insurance companies)
 </p>
 
 ## Installation
