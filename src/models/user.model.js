@@ -2,46 +2,47 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
-const { Schema } = mongoose;
-const userSchema = new Schema({
-  name: {
-    type: String,
-    maxlenght: 50,
-    required: true,
-  },
-  email: {
-    type: String,
-    maxlenght: 30,
-    required: true,
-  },
-  password: {
-    type: String,
-    required: true,
-    select: false,
-  },
-  tokens: [
-    {
-      token: {
-        type: String,
-        required: true,
-      },
+const Schema = mongoose.Schema;
+
+const userSchema = new Schema(
+  {
+    name: {
+      type: String,
+      maxlenght: 50,
+      required: true,
     },
-  ],
-  timestamps: true,
-  collection: 'users',
-});
+    email: {
+      type: String,
+      maxlenght: 30,
+      required: true,
+    },
+    password: {
+      type: String,
+      required: true,
+    },
+    tokens: [
+      {
+        token: {
+          type: String,
+          required: true,
+        },
+      },
+    ],
+  },
+  {
+    timestamps: true,
+    collection: 'users',
+  }
+);
 
 // ==> Cria um hash da senha antes de salvar no DB
-userSchema.pre('save', async (next) => {
+userSchema.pre('save', async function (next) {
   const user = this;
-  if (user.isModified('password')) {
-    user.password = await bcrypt.hash(user.password, 8);
-  }
-  next();
+  if (user.isModified('password')) return next();
 });
 
 // ==> Gera um token de autenticação ao entrar
-userSchema.methods.generateAuthToken = async () => {
+userSchema.methods.generateAuthToken = async function () {
   const user = this;
   const token = jwt.sign(
     { _id: user._id, name: user.name, email: user.email },
@@ -67,7 +68,6 @@ userSchema.statics.findByCredentials = async (email, password) => {
   if (!isPasswordMatch) {
     throw new Error({ error: 'Senha inválida' });
   }
-
   return user;
 };
 
