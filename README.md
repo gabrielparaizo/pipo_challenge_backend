@@ -1,19 +1,6 @@
 <h1 align="center">
 Pipo Challenge - Backend :fire:
 </h1>
-<h3 align="center">
-  
-<div align="center">
-  
-  ![GitHub last commit](https://img.shields.io/github/last-commit/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
-  ![GitHub package.json version](https://img.shields.io/github/package-json/v/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
-  ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
-  ![GitHub repo size](https://img.shields.io/github/repo-size/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
-  ![GitHub top language](https://img.shields.io/github/languages/top/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
-  
-</div>
-
-</h3>
 
 <p align="center">
 🔥 The main objective of this project is to create a solution that facilitates the current process of including new employees, where: We only ask for the necessary data for inclusion in those benefits; We validate the data provided according to the customer's benefits offer (avoiding possible future problems at the health insurance companies)
