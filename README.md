@@ -55,7 +55,7 @@ Entre na pasta do projeto:
 
 Instale as dependencias:
 
-`yarn start` ou `npm install`
+`yarn install` ou `npm install`
 
 Execute a aplicação:
 
