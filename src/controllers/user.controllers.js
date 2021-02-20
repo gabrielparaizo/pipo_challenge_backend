@@ -64,6 +64,5 @@ exports.loginUser = async (req, res) => {
 
 // ==> Método responsável pela página principal após o login
 exports.returnUserProfile = async (req, res) => {
-  await res.json({ ok: 'true' })
-  // await res.json(req.userId);
+  await res.json({ user: req.userId });
 };
