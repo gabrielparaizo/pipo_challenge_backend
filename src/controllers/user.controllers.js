@@ -10,8 +10,6 @@ function generateToken(params = {}) {
   });
 }
 
-// ==> Async Await
-
 // ==> Método responsável por criar novo user
 exports.registerNewUser = async (req, res) => {
   // Faz uma verificação para saber se já existe um usuário com este e-mail
@@ -36,7 +34,7 @@ exports.registerNewUser = async (req, res) => {
   }
 };
 
-// TODO: Rota responsável por fazer login
+// ==> Método responsável por fazer login
 exports.loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -64,5 +62,8 @@ exports.loginUser = async (req, res) => {
   }
 };
 
-// TODO: Rota responsável pela página principal após o login
-exports.returnUserProfile = async (req, res) => {};
+// ==> Método responsável pela página principal após o login
+exports.returnUserProfile = async (req, res) => {
+  await res.json({ ok: 'true' })
+  // await res.json(req.userId);
+};
