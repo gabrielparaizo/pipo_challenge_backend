@@ -41,18 +41,26 @@ To test API requests you can use [Insomnia](https://insomnia.rest/), [Postman](h
 
 In the terminal, clone the repository:<br>
 
-- Using HTTPS:
-  - `https://github.com/gabrielloppes/pipo_challenge_backend.git`
+Using HTTPS:
+```
+https://github.com/gabrielloppes/pipo_challenge_backend.git
+```
 
-- Using SSH:
-  - `git@github.com:gabrielloppes/pipo_challenge_backend.git`
+Using SSH:
+```
+git@github.com:gabrielloppes/pipo_challenge_backend.git
+```
 
-- Using Github CLI:
-  - `gh repo clone gabrielloppes/pipo_challenge_backend`
+Using Github CLI:
+```
+gh repo clone gabrielloppes/pipo_challenge_backend
+```
 
 Enter the project's folder:
 
-`cd pipo_challenge_backend`
+```
+cd pipo_challenge_backend
+```
 
 Install the dependencies:
 
