@@ -1,62 +1,69 @@
 # Pipo Challenge - Backend :fire:
 
-> Status do projeto: Em desenvolvimento :warning:
+> Project status: In development :construction:
 
-### Tópicos
+### Topics
 
-[Descrição do Projeto](#descrição-do-projeto)
+[Project description](#project-description)
 
-[Funcionalidades](#funcionalidades)
+[Functionalities](#functionalities)
 
-[Pré requisitos](#pré-requisitos)
+[Prerequisites](#prerequisites)
 
-[Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
+[How to run the application](#how-to-run-the-application-arrow_forward)
+
+[How to run the test suite](#how-to-run-the-test-suite)
+
+<br>
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
 
 
-## Descrição do projeto
-O objetivo deste projeto é criar uma solução que facilite o atual processo de inclusão de um funcionário em um plano de saúde, onde pedimos apenas os dados necessários para inclusão nestes benefícios, validamos os dados de acordo com a oferta do plano.
+## Project description
+The objective of this project is to create a solution that facilitates the current process of including an employee in an health insurance company, where we ask only for the necessary data  for inclusion in those benefits, validating the data according to the plan's offer.
 
-## Funcionalidades
+## Functionalities
 sdsdfsdfsdf
 
-## Pré requisitos
+## Prerequisites
 
-Para rodar esse projeto localmente você vai precisar:
+To run this project locally you'll need:
 
 - [NodeJS](https://nodejs.org/en/)
 - [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/)
 - [MongoDB](https://www.mongodb.com/)
 
-Para testar as requisições da API você pode utilizar o [Insomnia](https://insomnia.rest/), [Postman](https://www.postman.com/) ou qualquer outro cliente REST de sua preferência. Alternativamente você pode usar o [MongoDB Compass](https://www.mongodb.com/products/compass) para visualizar os dados
+To test API requests you can use [Insomnia](https://insomnia.rest/), [Postman](https://www.postman.com/) or any other REST client of your choice. Alternatively you can use [MongoDB Compass](https://www.mongodb.com/products/compass) to visualize the data
 
-## Como rodar a aplicação :arrow_forward:
+## How to run the application :arrow_forward:
 
-No terminal, clone o repositório:<br>
+In the terminal, clone the repository:<br>
 
-Usando HTTPS:
+- Using HTTPS:
+  - `https://github.com/gabrielloppes/pipo_challenge_api.git`
 
-`https://github.com/gabrielloppes/pipo_challenge_api.git`
+- Using SSH:
+  - `git@github.com:gabrielloppes/pipo_challenge_api.git`
 
-Usando SSH:
+- Using Github CLI:
+  - `gh repo clone gabrielloppes/pipo_challenge_api`
 
-`git@github.com:gabrielloppes/pipo_challenge_api.git`
-
-Usando Github CLI:
-
-`gh repo clone gabrielloppes/pipo_challenge_api`
-
-Entre na pasta do projeto:
+Enter the project's folder:
 
 `cd pipo_challenge_api`
 
-Instale as dependencias:
+Install the dependencies:
 
-`yarn install` ou `npm install`
+`yarn start` or `npm install`
 
-Execute a aplicação:
+Run the application:
 
 `yarn dev`
+
+## How to run the test suite
+
+Run `yarn test` to test the application
+
+I'm running tests with [Jest](https://jestjs.io/) and [Supertest](https://www.npmjs.com/package/supertest)
