@@ -1,4 +1,4 @@
-# *Pipo Challenge - Backend* :fire:
+# Pipo Challenge - Backend :fire:
 
 Project status: In development :warning:
 
