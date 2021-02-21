@@ -4,15 +4,15 @@ Project status: In development :warning:
 
 ### **Topics**
 
-[Project description](#project-description)
+[**Project description**](#project-description)
 
-[Functionalities](#functionalities)
+[**Functionalities**](#functionalities)
 
-[Prerequisites](#prerequisites)
+[**Prerequisites**](#prerequisites)
 
-[How to run the application](#how-to-run-the-application)
+[**How to run the application**](#how-to-run-the-application)
 
-[How to run the test suite](#how-to-run-the-test-suite)
+[**How to run the test suite**](#how-to-run-the-test-suite)
 
 <br>
 
