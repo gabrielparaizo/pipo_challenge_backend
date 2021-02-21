@@ -10,6 +10,8 @@ Project status: In development :warning:
 
 [**Prerequisites**](#prerequisites)
 
+[**Technologies**](#technologies)
+
 [**How to run the application**](#how-to-run-the-application)
 
 [**How to run the test suite**](#how-to-run-the-test-suite)
@@ -40,6 +42,15 @@ To run this project locally you'll need:
 - [MongoDB](https://www.mongodb.com/)
 
 To test API requests you can use [Insomnia](https://insomnia.rest/), [Postman](https://www.postman.com/) or any other REST client of your choice. Alternatively you can use [MongoDB Compass](https://www.mongodb.com/products/compass) to visualize the data
+
+## **Technologies**
+
+The following tools were used in this project
+
+- ExpressJS
+- Mongoose
+- JSON Web Tokens
+- BcryptJS
 
 ## **How to run the application**
 
