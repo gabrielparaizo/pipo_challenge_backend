@@ -84,7 +84,7 @@ Run the application:
 
 `yarn dev`
 
-# **Environment example and JSON file for API testing**
+## **Environment example and JSON file for API testing**
 
 Insomnia screenshot
 ![](https://github.com/gabrielloppes/pipo_challenge_backend/blob/master/src/screenshots/screeninsomnia.png)
