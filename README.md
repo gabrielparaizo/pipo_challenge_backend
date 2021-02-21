@@ -25,7 +25,11 @@ Project status: In development :warning:
 The objective of this project is to create a solution that facilitates the current process of including an employee in an health insurance company, where we ask only for the necessary data  for inclusion in those benefits, validating the data according to the plan's offer.
 
 ## **Functionalities**
-sdsdfsdfsdf
+
+As a company i can:
+- [x] Create an account and login
+- [ ] CRUD employees
+- [ ] CRUD health insurance companies and append to an employee 
 
 ## **Prerequisites**
 
