@@ -14,7 +14,10 @@ Project status: In development :warning:
 
 [**How to run the application**](#how-to-run-the-application)
 
+[**Environment example and JSON file for API testing**](#environment-example-and-json-file-for-api-testing)
+
 [**How to run the test suite**](#how-to-run-the-test-suite)
+
 
 <br>
 
@@ -88,3 +91,8 @@ To run the test suit run:
 `yarn test`
 
 I'm running tests with [Jest](https://jestjs.io/) and [Supertest](https://www.npmjs.com/package/supertest)
+
+# **Environment example and JSON file for API testing**
+
+Insomnia screenshot
+![](https://github.com/gabrielloppes/pipo_challenge_backend/blob/master/src/screenshots/screeninsomnia.png)
