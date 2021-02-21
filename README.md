@@ -89,6 +89,11 @@ Run the application:
 Insomnia screenshot
 ![](https://github.com/gabrielloppes/pipo_challenge_backend/blob/master/src/screenshots/screeninsomnia.png)
 
+I'm also sending the Insomnia file for API testing, you can view the file [here](https://github.com/gabrielloppes/insomnia_file/blob/main/Insomnia_2021-02-21.json)
+
+**_Please note_**
+  - Rename the `.env.example` file to `.env`
+
 ## **How to run the test suite**
 
 To run the test suit run:
