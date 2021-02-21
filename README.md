@@ -1,49 +1,90 @@
-<h1 align="center">
-Pipo Challenge - Backend :fire:
-</h1>
+# Pipo Challenge - Backend :fire:
 
-<p align="center">
-🔥 The main objective of this project is to create a solution that facilitates the current process of including new employees, where: We only ask for the necessary data for inclusion in those benefits; We validate the data provided according to the customer's benefits offer (avoiding possible future problems at the health insurance companies)
-</p>
+Project status: In development :warning:
 
-## 🔧 Installation
+### **Topics**
 
-To run this project locally you'll need:<br>
+[**Project description**](#project-description)
+
+[**Functionalities**](#functionalities)
+
+[**Prerequisites**](#prerequisites)
+
+[**Technologies**](#technologies)
+
+[**How to run the application**](#how-to-run-the-application)
+
+[**How to run the test suite**](#how-to-run-the-test-suite)
+
+<br>
+
+![GitHub package.json version](https://img.shields.io/github/package-json/v/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/gabrielloppes/pipo_challenge_backend?style=for-the-badge)
+
+
+## **Project description**
+The objective of this project is to create a solution that facilitates the current process of including an employee in an health insurance company, where we ask only for the necessary data  for inclusion in those benefits, validating the data according to the plan's offer.
+
+## **Functionalities**
+
+As a company i can:
+- [x] Create an account and login
+- [ ] CRUD employees
+- [ ] CRUD health insurance companies and append to an employee 
+
+## **Prerequisites**
+
+To run this project locally you'll need:
 
 - [NodeJS](https://nodejs.org/en/)
-- [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/), feel free to choose
+- [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/)
 - [MongoDB](https://www.mongodb.com/)
 
-Optionally, you can use [Insomnia](https://insomnia.rest/) to test API requests and [MongoDB Compass](https://www.mongodb.com/products/compass) to easily manipulate the database
+To test API requests you can use [Insomnia](https://insomnia.rest/), [Postman](https://www.postman.com/) or any other REST client of your choice. Alternatively you can use [MongoDB Compass](https://www.mongodb.com/products/compass) to visualize the data
 
-## ⚙️ Usage
+## **Technologies**
 
-You must clone this repository to your local machine:<br>
+The following tools were used in this project
+
+- ExpressJS
+- Mongoose
+- JSON Web Tokens
+- BcryptJS
+
+## **How to run the application**
+
+In the terminal, clone the repository:<br>
 
 - Using HTTPS:
-  `https://github.com/gabrielloppes/pipo_challenge_api.git`
+  - `https://github.com/gabrielloppes/pipo_challenge_backend.git`
 
 - Using SSH:
-  `git@github.com:gabrielloppes/pipo_challenge_api.git`
+  - `git@github.com:gabrielloppes/pipo_challenge_backend.git`
 
 - Using Github CLI:
-  `gh repo clone gabrielloppes/pipo_challenge_api`
+  - `gh repo clone gabrielloppes/pipo_challenge_backend`
 
-After that, navigate to the project's folder and run `npm install` to install dependencies
+Enter the project's folder:
 
-## 💡 Strategy and technical desicions
+`cd pipo_challenge_backend`
 
-- ### Strategy Design Pattern<br>
+Install the dependencies:
 
-  - The Strategy pattern is an interesting pattern, as it defines a family of algorithms and places each one in a separate class, so that you can use them interchangeably for different actions.
+`yarn install`
 
-- ### RESTful API approach<br>
-  - The advantage of using the RESTful API approach is the decoupling, this way, each layer of the application will have its own responsibility separately.
+or
 
-## Technical debts:
+`npm install`
 
-- [x] Create users and authenticate with JWT and encrypt with BcryptJS
+Run the application:
 
-- [ ] Validations
+`yarn dev`
 
-- [ ] Test with Jest
+## **How to run the test suite**
+
+To run the test suit run:
+
+`yarn test`
+
+I'm running tests with [Jest](https://jestjs.io/) and [Supertest](https://www.npmjs.com/package/supertest)
