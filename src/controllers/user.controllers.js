@@ -3,18 +3,17 @@ const bcrypt = require('bcryptjs');
 const authConfig = require('../config/auth');
 const jwt = require('jsonwebtoken');
 
-// ==> Função para gerar token de autenticação
+// ==> Gera um token de autenticação que expira à cada 1 dia
 function generateToken(params = {}) {
   return jwt.sign(params, authConfig.secret, {
     expiresIn: 86400,
   });
 }
 
-// ==> Método responsável por criar novo user
+// ==> Método que registra um novo usuário
 exports.registerNewUser = async (req, res) => {
-  // Faz uma verificação para saber se já existe um usuário com este e-mail
   const { email } = req.body;
-
+  // Faz uma verificação para saber se já existe um usuário com este e-mail
   try {
     if (await User.findOne({ email })) {
       return res.status(400).json({ error: 'O usuário já existe' });
@@ -39,7 +38,7 @@ exports.loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
 
-    // Vai procurar na base de dados a informação de email e senha
+    // Verifica um um e-mail existente na base de dados e seleciona senha para comparação com bcryptjs
     const user = await User.findOne({ email }).select('+password');
     // Faz a tratativa de erro
     if (!user) {
@@ -58,7 +57,7 @@ exports.loginUser = async (req, res) => {
       token: generateToken({ id: user.id }),
     });
   } catch (err) {
-    res.status(400).json({ error: 'Deu erro aqui' });
+    res.status(400).json({ error: 'Não foi possível fazer login' });
   }
 };
 
