@@ -84,6 +84,11 @@ Run the application:
 
 `yarn dev`
 
+# **Environment example and JSON file for API testing**
+
+Insomnia screenshot
+![](https://github.com/gabrielloppes/pipo_challenge_backend/blob/master/src/screenshots/screeninsomnia.png)
+
 ## **How to run the test suite**
 
 To run the test suit run:
@@ -91,8 +96,3 @@ To run the test suit run:
 `yarn test`
 
 I'm running tests with [Jest](https://jestjs.io/) and [Supertest](https://www.npmjs.com/package/supertest)
-
-# **Environment example and JSON file for API testing**
-
-Insomnia screenshot
-![](https://github.com/gabrielloppes/pipo_challenge_backend/blob/master/src/screenshots/screeninsomnia.png)
