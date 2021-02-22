@@ -33,7 +33,7 @@ The objective of this project is to create a solution that facilitates the curre
 
 As a company i can:
 - [x] Create an account and login
-- [ ] CRUD employees
+- [x] CRUD employees
 - [ ] CRUD health insurance companies and append to an employee 
 
 ## **Prerequisites**
