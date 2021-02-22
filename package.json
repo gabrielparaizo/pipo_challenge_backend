@@ -12,8 +12,6 @@
   "author": "Gabriel Lopes",
   "license": "MIT",
   "dependencies": {
-    "@types/mongodb": "^3.6.7",
-    "@types/mongoose": "^5.10.3",
     "bcrypt": "^5.0.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",

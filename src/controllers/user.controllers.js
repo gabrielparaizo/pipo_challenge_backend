@@ -60,8 +60,3 @@ exports.loginUser = async (req, res) => {
     res.status(400).json({ error: 'Não foi possível fazer login' });
   }
 };
-
-// ==> Método responsável pela página principal após o login
-exports.returnUserProfile = async (req, res) => {
-  await res.json({ user: req.userId });
-};
