@@ -11,6 +11,12 @@ const EmployeeSchema = new Schema({
   name: {
     type: String,
     required: true,
+    max: 50,
+  },
+  role: {
+    type: String,
+    required: true,
+    max: 50, 
   },
   docNumber: {
     type: String,
@@ -24,6 +30,10 @@ const EmployeeSchema = new Schema({
     type: String,
     required: true,
     lowecase: true,
+    unique: true,
+    validate: (value) => {
+      
+    }
   },
   address: {
     type: String,

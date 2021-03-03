@@ -13,7 +13,7 @@ mongoose
     useCreateIndex: true,
   })
   .then(() => {
-    console.log('A base de dados foi conectada com sucesso!');
+    console.log('Conexão com MongoDB estabelecida com sucesso!');
   })
   .catch((err) => {
     console.log(`Erro ao conectar com a base de dados...${err}`);
