@@ -3,11 +3,16 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const EmployeeSchema = new Schema({
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true,
+  },
   name: {
     type: String,
     required: true,
   },
-  cpf: {
+  docNumber: {
     type: String,
     required: true,
   },
@@ -36,15 +41,12 @@ const EmployeeSchema = new Schema({
     type: Number,
     required: true,
   },
-  user: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
-    require: true,
-  },
-  // healthInsuranceCompanies: [{
-  //   type: mongoose.Schema.Types.ObjectId,
-  //   ref: 'healthInsuranceCompanies'
-  // }]
+  healthInsuranceCompanies: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'healthInsuranceCompanies',
+    },
+  ],
 });
 
 const Employees = mongoose.model('Employees', EmployeeSchema);

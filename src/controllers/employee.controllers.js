@@ -1,11 +1,16 @@
 const Employee = require('../models/employee.model');
-const auth = require('../middlewares/auth');
+const HealthInsurance = require('../models/insuranceCompany.model');
 
 // ==> Método responsável por listar todos os funcionários
 exports.getEmployees = async (req, res) => {
   try {
-    const employees = await Employee.find().populate('user');
-    return res.send({ employees });
+    const employees = await Employee.find()
+      .populate('user', '-__v')
+      .select('-__v');
+    return res.send({
+      count: employees.length,
+      employees,
+    });
   } catch (err) {
     return res.status(400).json({ err: 'Erro ao carregar funcionários' });
   }
@@ -14,7 +19,9 @@ exports.getEmployees = async (req, res) => {
 // ==> Método responsável por listar um funcionário por ID
 exports.showEmployee = async (req, res) => {
   try {
-    const employee = await Employee.findById(req.params.employeeId).populate('user');
+    const employee = await Employee.findById(req.params.employeeId).populate(
+      'user'
+    );
     return res.send({ employee });
   } catch (err) {
     return res.status(400).json({ error: 'Erro ao carregar o funcionário' });
@@ -33,7 +40,13 @@ exports.createEmployee = async (req, res) => {
 
 // ==> Método responsável por atualizar um funcionário
 exports.updateEmployee = async (req, res) => {
-  await res.send({ user: req.userId });
+  // await res.send({ user: req.userId });
+  try {
+    const employee = await Employee.findByIdAndUpdate({ ...req.body });
+    return res.send({ employee });
+  } catch (err) {
+    return res.status(400).json({ error: 'Erro ao atualiar o funcionário' });
+  }
 };
 
 // ==> Método responsável por deletar um funcionário

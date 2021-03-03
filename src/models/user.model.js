@@ -7,21 +7,28 @@ const userSchema = new Schema({
   name: {
     type: String,
     required: true,
+    max: 50,
   },
   email: {
     type: String,
     unique: true,
     required: true,
     lowercase: true,
+    max: 30,
   },
   password: {
     type: String,
     required: true,
     select: false,
+    min: [6, 'A senha é muito curta'],
+  },
+  employees: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Employees',
   },
   createdAt: {
     type: Date,
-    default: Date.now,
+    default: Date.now.UTC,
   },
 });
 
@@ -29,7 +36,6 @@ const userSchema = new Schema({
 userSchema.pre('save', async function (next) {
   const hash = await bcrypt.hash(this.password, 10);
   this.password = hash;
-
   next();
 });
 

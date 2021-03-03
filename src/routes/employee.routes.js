@@ -1,4 +1,7 @@
 const express = require('express');
+const multer = require('multer');
+const multerConfig = require('../config/multer')
+
 const router = express.Router();
 const auth = require('../middlewares/auth');
 
@@ -11,7 +14,7 @@ router.get('/', auth, employeeController.getEmployees);
 router.get('/:employeeId', auth, employeeController.showEmployee);
 
 // ==> Rota responsável por criar um novo usuário
-router.post('/', auth, employeeController.createEmployee);
+router.post('/', auth, multer(multerConfig).single('file'), employeeController.createEmployee);
 
 // ==> Rota responsável por atualizar um funcionário
 router.put('/:employeeId', auth, employeeController.updateEmployee);
