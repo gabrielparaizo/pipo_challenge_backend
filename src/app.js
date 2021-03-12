@@ -1,12 +1,11 @@
 const express = require('express');
 const cors = require('cors');
-const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const mongooseCoonection = require('./config/mongooseConnection.config');
 
 const app = express();
 
-// => Rotas da API:
+// => API routes:
 const index = require('./routes/index');
 const userRoutes = require('./routes/user.routes');
 const employeeRoutes = require('./routes/employee.routes');

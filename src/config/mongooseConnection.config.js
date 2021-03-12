@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
-// ==> Importa o banco do arquivo: 'db.config.js'
-const database = require('./db.config'); // ==> Conexão local com MongoDB
+// ==> Import file: 'db.config.js'
+const database = require('./db.config'); // ==> local MongoDB connection
 
 mongoose.Promise = global.Promise;
 
-// ==> Conexão com base de dados
+// ==> DB Connection
 mongoose
   .connect(database.local.localUrlDatabase, {
     useNewUrlParser: true,
@@ -13,9 +13,9 @@ mongoose
     useCreateIndex: true,
   })
   .then(() => {
-    console.log('Conexão com MongoDB estabelecida com sucesso!');
+    console.log('MongoDB connection established!');
   })
   .catch((err) => {
-    console.log(`Erro ao conectar com a base de dados...${err}`);
+    console.log(`Error connecting to the database...${err}`);
     process.exit();
   });

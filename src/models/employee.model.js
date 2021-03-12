@@ -8,7 +8,12 @@ const EmployeeSchema = new Schema({
     ref: 'User',
     required: true,
   },
-  name: {
+  firstName: {
+    type: String,
+    required: true,
+    max: 50,
+  },
+  lastName: {
     type: String,
     required: true,
     max: 50,
@@ -18,9 +23,13 @@ const EmployeeSchema = new Schema({
     required: true,
     max: 50, 
   },
+  // CPF
   docNumber: {
     type: String,
     required: true,
+    /* default: () => {
+      
+    } */
   },
   admissionDate: {
     type: Date,
@@ -31,9 +40,9 @@ const EmployeeSchema = new Schema({
     required: true,
     lowecase: true,
     unique: true,
-    validate: (value) => {
+    /* validate: (value) => {
       
-    }
+    } */
   },
   address: {
     type: String,
