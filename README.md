@@ -87,7 +87,7 @@ Run the application:
 ## **Environment example and JSON file for API testing**
 
 Insomnia screenshot
-![](https://github.com/gabrielloppes/pipo_challenge_backend/blob/master/src/screenshots/screeninsomnia.png)
+![](https://github.com/gabrielloppes/pipo_challenge_backend/blob/master/src/screenshots/screen-insomnia.png)
 
 I'm also sending the Insomnia file for API testing, you can view the file [here](https://github.com/gabrielloppes/insomnia_file/blob/main/Insomnia_2021-02-21.json)
 
